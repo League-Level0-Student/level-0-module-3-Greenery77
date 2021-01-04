@@ -20,24 +20,25 @@ public class CrazyCatLady {
 	
 	if (catNumber >= 3) {
 	
-	JOptionPane.showInternalMessageDialog(null, "You are a crazy cat lady o_O");
+	JOptionPane.showMessageDialog(null, "You are a crazy cat lady");
 		
 	}
 		// 4. If they have less than 3 cats AND more than 0 cats, call the method below to show them a cat video
 		//    Hint: You can use the && operator 
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
 		
-	if (catNumber <= 3 && catNumber >= 0) {
+	else if (catNumber < 3 && catNumber > 0) {
 		
 	JOptionPane.showMessageDialog(null, "*insert cat video*");
 		
 	}
 	
 	
-	if (catNumber == 0) {
+	else if (catNumber == 0) {
 		
 	JOptionPane.showMessageDialog(null, "*insert frog sitting on bench*");
-		
+	}
+	
 	}
 
 	static void playVideo(String videoURL) {
